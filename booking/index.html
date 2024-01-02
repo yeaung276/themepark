@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="theme park website of Team 23(Tutor Group 4)" />
+    <meta name="keywords" content="Theme park, fun, holiday, outdoor activities, family" />
+    <meta name="author" content="Team 23(Tutor Group 4)" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" content="5" />
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/booking/index.css">
+    <title>Fun Theme Park</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik+Doodle+Shadow">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <span class="logo">
+                <a href="/index.html"><img src="/assets/fun-theme-park-logo.png" alt="logo" width="140px" /></a>
+            </span>
+            <span>Weather</span>
+            <span>Useful Links</span>
+            <span class="book-now">
+                <button>Book now</button>
+            </span>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <a href="/index.html">
+                <button type="button" style="border: none">
+                    <img src="/assets/back-arrow-icon.svg" alt="back" width="30px" />
+                </button></a>
+            <div class="form-title">
+                <img src="/assets/fun-theme-park-logo.png" width="300" />
+                <h1>Please fill the information to book your ticket</h1>
+            </div>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input id="email" type="email" />
+            </div>
+            <div class="form-row">
+                <label for="phone">Phone</label>
+                <input id="phone" type="tel" />
+            </div>
+            <div class="form-row">
+                <label for="name">Name</label>
+                <input id="name" type="text" />
+            </div>
+            <div class="form-row">
+                <label for="ticket">Number of ticket</label>
+                <input id="ticket" type="number" min="0" />
+            </div>
+            <div class="form-row">
+                <label for="checkin">Check In time</label>
+                <select id="checkin">
+                    <option>9:00</option>
+                    <option>12:00</option>
+                    <option>15:00</option>
+                </select>
+            </div>
+            <div style="display: flex;justify-content:center">
+                <button class="form-submit" type="submit">Book Now</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div>
+            <h2>Contact us</h2>
+            <menu>
+                <li>example@gmail.com</li>
+                <li>098765432124</li>
+                <li>facebook</li>
+                <li>youtube</li>
+                <li>twitter</li>
+            </menu>
+        </div>
+    </footer>
+</body>
+
+</html>

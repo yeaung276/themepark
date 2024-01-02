@@ -1,0 +1,48 @@
+form {
+  background-color: white;
+  width: 100rem;
+  margin: auto;
+  margin-top: 5rem;
+  padding: 1rem;
+}
+
+.form-title {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+.form-row {
+  padding: 0 1rem;
+  margin: 1.5rem 0;
+}
+
+.form-row label {
+  display: block;
+  font-size: 1.2rem;
+}
+
+.form-row input {
+  width: 90%;
+  padding: 0.8rem;
+  font-size: 1.5rem;
+}
+
+.form-row select {
+  width: 90%;
+  padding: 0.8rem;
+  font-size: 1.5rem;
+}
+
+.form-submit {
+    padding: 1rem 1.5rem;
+    border-radius: 5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: skyblue;
+    border: none;
+}
+
+.form-submit:hover {
+    background-color: lightblue;
+}

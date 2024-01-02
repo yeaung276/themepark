@@ -1,0 +1,283 @@
+body {
+  background-color: #ededed;
+}
+
+/* Header */
+header nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background-color: #fff200;
+}
+
+header nav span {
+  flex-grow: 1;
+  font-size: 1.5rem;
+}
+
+.logo {
+  padding: 0 1rem;
+  flex-grow: 0;
+}
+
+.book-now {
+  width: 200px;
+  flex-grow: 0;
+}
+
+.book-now button {
+  background-color: #fff200;
+  border: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.book-now button:hover {
+  background-color: #fdd017;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #fff200;
+  margin-top: 3rem;
+  padding: 5rem;
+}
+
+/* Main */
+.title {
+  font-family: "Rubik Doodle Shadow";
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  text-align: center;
+}
+
+.welcome {
+  width: 100%;
+}
+
+.welcome h1 {
+  position: absolute;
+  font-size: 3rem;
+  font-family: "Rubik Doodle Shadow";
+  z-index: 100;
+  right: 30%;
+  color: red;
+  animation-name: fadein;
+  animation-duration: 1.5s;
+}
+
+.to-guide {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.to-guide-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.to-guide-btn button {
+  font-size: 1.2rem;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  background-color: #fff200;
+}
+
+.to-guide-btn button:hover {
+    background-color: #fdd017;
+  }
+
+/* Events */
+.events {
+  margin: 0 1rem;
+  padding: 2rem 0;
+  background-image: url("/assets/backgrounds/event-bg.avif");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 50rem;
+}
+
+.events h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.events p {
+  font-size: 1.5rem;
+}
+
+.events q {
+  font-family: "Pacifico";
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.event-img {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.event-img img {
+  margin: 2rem;
+  border-radius: 0.5rem;
+  flex-grow: 0;
+}
+
+/* Attraction */
+.attractions {
+  margin: 0 1rem;
+}
+
+.attraction-container {
+  padding: 1rem;
+  overflow-x: scroll;
+  display: flex;
+  gap: 1rem;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.attraction-container::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  min-width: 800px;
+  padding: 1rem;
+  border: 1px solid gray;
+  border-radius: 1rem;
+}
+
+.card:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 255, 0.2);
+}
+
+.card p {
+  font-size: 1.2rem;
+}
+
+/* Locations */
+.location {
+  margin: 0 5rem;
+}
+.map {
+  margin: 1rem 5rem;
+}
+
+.location address {
+  font-size: 1.2rem;
+}
+
+/* start https://www.w3schools.com/howto/howto_js_slideshow.asp */
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.slide-left {
+  animation-name: slide-left;
+  animation-duration: 1.5s;
+}
+
+.slide-right {
+  animation-name: slide-right;
+  animation-duration: 1.5s;
+}
+
+/* end https://www.w3schools.com/howto/howto_js_slideshow.asp */
+
+/* Animations */
+
+@keyframes slide-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 20%;
+    top: 300px;
+  }
+  to {
+    opacity: 100%;
+    top: 100px;
+  }
+}

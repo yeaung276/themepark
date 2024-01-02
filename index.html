@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="theme park website of Team 23(Tutor Group 4)" />
+    <meta name="keywords" content="Theme park, fun, holiday, outdoor activities, family" />
+    <meta name="author" content="Team 23(Tutor Group 4)" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" content="5" />
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="/index.css">
+    <title>Fun Theme Park</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik+Doodle+Shadow">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <span class="logo">
+                <a href="/index.html"><img src="/assets/fun-theme-park-logo.png" alt="logo" width="140px" /></a>
+            </span>
+            <span>Weather</span>
+            <span>Useful Links</span>
+            <span class="book-now">
+                <a href="/booking/index.html"><button>Book now</button></a>
+            </span>
+        </nav>
+    </header>
+    <main>
+        <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+        <section class="welcome">
+            <h1>Welcome from the Fun Theme Park</h1>
+            <section aria-label="Gallery">
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides">
+                        <img src="/assets/coursel/img1.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="/assets/coursel/img2.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="/assets/coursel/img3.jpg" style="width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </section>
+        </section>
+        <h2 class="to-guide"><i>Need a guide on planning?</i></h2>
+        <div class="to-guide-btn"><a href="/guide/index.html"><button>Go to your guide</button></a></div>
+
+
+        <h1 id="event-title" class="title">What is happening today?</h1>
+        <section class="events">
+            <div id="christmas-tree" class="event-img" style="display: none">
+                <img src="/assets/christmas-tree.jpg" alt="christmas-tree" />
+            </div>
+            <div id="christmas-message" class="event-img" style="display: none">
+                <div style="width: 50rem">
+                    <h3>🌟✨ Christmas Day Magic Awaits! 🎅🎄</h3>
+                    <q>
+                        Join us at Fun Theme Park for a day of enchantment and joy! Meet Santa, twirl under twinkling
+                        lights,
+                        and
+                        enjoy festive thrills. 🎁🎡
+                    </q>
+                </div>
+            </div>
+        </section>
+
+        <h1 class="title">Attractions</h1>
+        <section class="attractions">
+            <div class="attraction-container">
+                <div class="card">
+                    <h2>Roller Coaster</h2>
+                    <iframe width="100%" height="498" src="https://www.youtube.com/embed/HGME_gAN6gg"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="card">
+                    <h2>Roller Coaster</h2>
+                    <iframe width="100%" height="498" src="https://www.youtube.com/embed/HGME_gAN6gg"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="card">
+                    <h2>Roller Coaster</h2>
+                    <iframe width="100%" height="498" src="https://www.youtube.com/embed/HGME_gAN6gg"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </section>
+
+        <h1 class="title">Where are we located?</h1>
+        <section class="location">
+            <h2><strong>We are open from 9:00 AM to 6:00 PM</strong></h1>
+                <div class="map">
+                    <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                            href="https://www.maps.ie/population/"></a></iframe>
+                </div>
+                <h2>Address</h2>
+                <address>
+                    1 Grafton Street, Dublin, Ireland
+                </address>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h2>Contact us</h2>
+            <menu>
+                <li>example@gmail.com</li>
+                <li>098765432124</li>
+                <li>facebook</li>
+                <li>youtube</li>
+                <li>twitter</li>
+            </menu>
+        </div>
+    </footer>
+</body>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex, true);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        if (n > 0) {
+            showSlides(slideIndex += n, false, true);
+        } else {
+            showSlides(slideIndex += n, false, false);
+        }
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n, init = false, next = true) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        if (!init) {
+            slides[slideIndex - 1].classList.add(next ? 'slide-left' : 'slide-right')
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+
+    function slideInChristmasTree() {
+        const trigger1 = window.innerHeight / 2;
+        const trigger2 = window.innerHeight / 2 - 500;
+        if (document.getElementById('event-title').getBoundingClientRect().top < trigger1) {
+            document.getElementById('christmas-tree').style.display = 'flex'
+            document.getElementById('christmas-tree').classList.add('slide-right')
+        } else {
+            document.getElementById('christmas-tree').style.display = 'none'
+            document.getElementById('christmas-tree').classList.remove('slide-right')
+        }
+        if (document.getElementById('event-title').getBoundingClientRect().top < trigger2) {
+            document.getElementById('christmas-message').style.display = 'flex'
+            document.getElementById('christmas-message').classList.add('slide-right')
+        } else {
+            document.getElementById('christmas-message').style.display = 'none'
+            document.getElementById('christmas-message').classList.remove('slide-right')
+        }
+    }
+
+    window.addEventListener('scroll', slideInChristmasTree)
+</script>
+
+</html>
