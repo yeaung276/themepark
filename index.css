@@ -1,5 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #ededed;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Header */
@@ -92,8 +97,8 @@ footer {
 }
 
 .to-guide-btn button:hover {
-    background-color: #fdd017;
-  }
+  background-color: #fdd017;
+}
 
 /* Events */
 .events {

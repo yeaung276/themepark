@@ -7,7 +7,7 @@
     <meta name="keywords" content="Theme park, fun, holiday, outdoor activities, family" />
     <meta name="author" content="Team 23(Tutor Group 4)" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <meta http-equiv="refresh" content="5" /> -->
+    <meta http-equiv="refresh" content="60" />
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/png" />
     <link rel="stylesheet" href="/index.css">
     <link rel="stylesheet" href="/guide/index.css">
@@ -23,15 +23,81 @@
             <span class="logo">
                 <a href="/index.html"><img src="/assets/fun-theme-park-logo.png" alt="logo" width="140px" /></a>
             </span>
-            <span>Weather</span>
-            <span>Useful Links</span>
+            <span style="display: flex; align-items: center">
+                <img src="/assets/weather.jpg" alt="sunny-weather" width="80px" />
+                <span style="color: red"><i>There will be no rain tomorrow 🧑‍🎄</i></span>
+            </span>
             <span class="book-now">
-                <button>Book now</button>
+                <a href="/booking/index.html"><button>Book now</button></a>
             </span>
         </nav>
     </header>
     <main>
-        guide
+        <section class="guide-container">
+            <div class="box" style="background-image: url('/assets/guide/bgs/bg1-c.jpeg')">
+                <img src="/assets/guide/christmas-bus.jpg" alt="christmas-bus" />
+                <article>
+                    <h2>🚌 Hop on the Jingle Bus Express! 🎅✨</h2>
+                    <p>
+                        Embark on a festive adventure as we whisk you away to the merriest place in town! 🌟🎄 Let the
+                        wheels jingle all the way to joy, laughter, and Christmas magic at Fun Park. The
+                        fun starts the moment you step on the bus! 🚌🎁 #JingleBusExpress #ChristmasAdventure 🌈🎅</p>
+                </article>
+            </div>
+            <div class="box" style="background-image: url('/assets/guide/bgs/bg2-c.avif')">
+                <article>
+                    <h2>🎄✨ Snuggle Up in Yuletide Bliss! 🛌🎅</h2>
+                    <p>
+                        Discover the coziest Christmas haven at Fun Park Hotel. 🌟 Unwrap comfort, unwrap joy! 🎁 From
+                        festive décor to twinkling lights, every corner radiates holiday cheer. Stay with us and make
+                        your Christmas merry and bright! 🏨🎄 #HolidayHaven #CozyChristmasStay 🌟🛷</p>
+                </article>
+                <img src="/assets/guide/christmas-hotel.webp" alt="christmas-hotel" />
+            </div>
+            <div class="box" style="background-image: url('/assets/guide/bgs/bg3-c.jpg')">
+                <img src="/assets/guide/christmas-restaurant.avif" alt="christmas-restaurant" />
+                <article>
+                    <h2>🍽️✨ Savor the Season at Yule Bites! 🎅🌟</h2>
+                    <p>
+                        Dine in the heart of Christmas cheer at [Your Theme Park Restaurants]. 🎄✨ Taste the magic with
+                        festive flavors, jolly vibes, and a menu sprinkled with joy! 🌮🎁 Unwrap a culinary celebration
+                        that'll leave your taste buds singing carols! 🍷🍽️ #YuleBites #FeastOfJoy 🎉🍾</p>
+                </article>
+            </div>
+            <div class="box" style="background-image: url('/assets/guide/bgs/bg4-c.webp')">
+                <article>
+                    <h2>🎄🌟 Towering Tannenbaum Thrills Await! 🌲✨</h2>
+                    <p>
+                        Gather 'round at Fun Park for the Grand Illumination Extravaganza! 🎅🎉 Behold our
+                        colossal Christmas tree, a symphony of lights and festivity that'll leave you in awe. 🎁✨ Where
+                        joy meets towering heights – the heart of our magical wonderland! 🏰🎄 #TreeTopJoy
+                        #ChristmasSplendor 🌟🎢</p>
+                </article>
+                <img src="/assets/guide/christmas-tree.png" alt="christmas-tree" />
+            </div>
+            <div class="box" style="background-image: url('/assets/guide/bgs/bg5-c.jpg')">
+                <img src="/assets/guide/christmas-rollercoster.jpg" alt="fun-rollercoster" />
+                <article>
+                    <h2>🎢🎅 Hold on to Your Jingle Bells – Coaster Claus is Calling! 🌟✨</h2>
+                    <p>
+                        Dare to ride the Yuletide Thrill Coaster at [Your Theme Park]! 🎄🚀 Get ready for loops of
+                        laughter, twists of cheer, and drops of pure excitement! 🎁🎢 Unwrap the adrenaline rush,
+                        because this Christmas, the real adventure is on the tracks! 🎉🌈 #CoasterCraze
+                        #RollingInJingleJoy 🎅🌟</p>
+                </article>
+            </div>
+            <div class="box" style="background-image: url('/assets/guide/bgs/bg6-c.jpg')">
+                <article>
+                    <h2>🎅👋 Farewell, Festive Friends! 🌟🎄</h2>
+                    <p>
+                        As the sleigh bells fade and the lights twinkle one last time, we bid you a cheery adieu from
+                        [Your Theme Park]! 🎁✨ Your laughter, joy, and holiday spirit warmed our winter wonderland.
+                        Until we meet again, keep the Christmas magic alive in your hearts! 🎅❤️ #MerryGoodbye
+                        #SeeYouNextYear 🚀🌈</p>
+                </article>
+                <img src="/assets/guide/christmas-goodbye.webp" alt="christmas-goodbye" />
+            </div>
+        </section>
     </main>
     <footer>
         <div>
@@ -46,5 +112,25 @@
         </div>
     </footer>
 </body>
+
+<script>
+    function checkBoxes() {
+        const boxes = document.querySelectorAll('.box')
+        const triggerBottom = window.innerHeight / 6 * 4;
+        boxes.forEach((b) => {
+            const boxTop = b.getBoundingClientRect().top;
+            if (boxTop < triggerBottom) {
+                b.classList.add('show')
+            } else {
+                b.classList.remove('show')
+            }
+        })
+
+    }
+
+    checkBoxes()
+
+    window.addEventListener('scroll', checkBoxes)
+</script>
 
 </html>

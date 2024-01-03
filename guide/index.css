@@ -1,0 +1,43 @@
+.guide-container {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.guide-container .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem;
+    padding: 0 10rem;
+    height: 40rem;
+    width: 100%;
+    transform: translateX(400%);
+    transition: transform .8s ease;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.box img {
+    width: 500px;
+    border-radius: 1rem;
+}
+
+.box article {
+    width: 50rem;
+    font-size: 1.5rem;
+    font-family: 'Pacifico';
+}
+
+.box:nth-of-type(even){
+    transform: translateX(-400%)
+}
+
+.box.show {
+    transform: translateX(0)
+}

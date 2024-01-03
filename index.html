@@ -7,7 +7,7 @@
     <meta name="keywords" content="Theme park, fun, holiday, outdoor activities, family" />
     <meta name="author" content="Team 23(Tutor Group 4)" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="refresh" content="5" />
+    <meta http-equiv="refresh" content="60" />
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/png" />
     <link rel="stylesheet" href="/index.css">
     <title>Fun Theme Park</title>
@@ -22,8 +22,10 @@
             <span class="logo">
                 <a href="/index.html"><img src="/assets/fun-theme-park-logo.png" alt="logo" width="140px" /></a>
             </span>
-            <span>Weather</span>
-            <span>Useful Links</span>
+            <span style="display: flex; align-items: center">
+                <img src="/assets/weather.jpg" alt="sunny-weather" width="80px" />
+                <span style="color: red"><i>There will be no rain tomorrow 🧑‍🎄</i></span>
+            </span>
             <span class="book-now">
                 <a href="/booking/index.html"><button>Book now</button></a>
             </span>
@@ -88,31 +90,40 @@
                     <h2>Roller Coaster</h2>
                     <iframe width="100%" height="498" src="https://www.youtube.com/embed/HGME_gAN6gg"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <article>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat
+                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </article>
                 </div>
                 <div class="card">
                     <h2>Roller Coaster</h2>
                     <iframe width="100%" height="498" src="https://www.youtube.com/embed/HGME_gAN6gg"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <article>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat
+                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </article>
                 </div>
                 <div class="card">
                     <h2>Roller Coaster</h2>
                     <iframe width="100%" height="498" src="https://www.youtube.com/embed/HGME_gAN6gg"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <article>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat
+                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </article>
                 </div>
             </div>
         </section>
@@ -184,7 +195,7 @@
 
     function slideInChristmasTree() {
         const trigger1 = window.innerHeight / 2;
-        const trigger2 = window.innerHeight / 2 - 500;
+        const trigger2 = window.innerHeight / 2 - 700;
         if (document.getElementById('event-title').getBoundingClientRect().top < trigger1) {
             document.getElementById('christmas-tree').style.display = 'flex'
             document.getElementById('christmas-tree').classList.add('slide-right')
