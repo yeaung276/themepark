@@ -2,38 +2,50 @@
 <html>
 
 <head>
+    <!-- metadata -->
     <meta charset="UTF-8" />
     <meta name="description" content="theme park website of Team 23(Tutor Group 4)" />
     <meta name="keywords" content="Theme park, fun, holiday, outdoor activities, family" />
     <meta name="author" content="Team 23(Tutor Group 4)" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="refresh" content="60" />
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="stylesheet" href="/stylesheets/booking.css">
+
+    <!-- title bar  -->
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/png" />
-    <link rel="stylesheet" href="/index.css">
-    <link rel="stylesheet" href="/booking/index.css">
     <title>Fun Theme Park</title>
 
+    <!-- fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik+Doodle+Shadow">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
 </head>
 
 <body>
+    <!-- Header and nav bar -->
     <header>
         <nav>
+            <!-- theme park logo -->
             <span class="logo">
                 <a href="/index.html"><img src="/assets/fun-theme-park-logo.png" alt="logo" width="140px" /></a>
             </span>
+            <!-- weather -->
             <span style="display: flex; align-items: center">
                 <img src="/assets/weather.jpg" alt="sunny-weather" width="80px" />
                 <span style="color: red"><i>There will be no rain tomorrow 🧑‍🎄</i></span>
             </span>
+            <!-- booking -->
             <span class="book-now">
                 <a href="/booking/index.html"><button>Book now</button></a>
             </span>
         </nav>
     </header>
     <main>
+        <!-- form for submitting to book a ticket -->
         <form>
+            <!-- back button -->
             <a href="/index.html">
                 <button type="button" style="border: none">
                     <img src="/assets/back-arrow-icon.svg" alt="back" width="30px" />
@@ -42,22 +54,27 @@
                 <img src="/assets/fun-theme-park-logo.png" width="300" />
                 <h1>Please fill the information to book your ticket</h1>
             </div>
+            <!-- email input -->
             <div class="form-row">
                 <label for="email">Email</label>
                 <input id="email" type="email" />
             </div>
+            <!-- phone input -->
             <div class="form-row">
                 <label for="phone">Phone</label>
                 <input id="phone" type="tel" />
             </div>
+            <!-- name input -->
             <div class="form-row">
                 <label for="name">Name</label>
                 <input id="name" type="text" />
             </div>
+            <!-- number of ticket input -->
             <div class="form-row">
                 <label for="ticket">Number of ticket</label>
                 <input id="ticket" type="number" min="0" />
             </div>
+            <!-- check in time input -->
             <div class="form-row">
                 <label for="checkin">Check In time</label>
                 <select id="checkin">
@@ -66,11 +83,13 @@
                     <option>15:00</option>
                 </select>
             </div>
+            <!-- submit button -->
             <div style="display: flex;justify-content:center">
                 <button class="form-submit" type="submit">Book Now</button>
             </div>
         </form>
     </main>
+    <!-- theme park footer and contact -->
     <footer>
         <div>
             <h2>Contact us</h2>

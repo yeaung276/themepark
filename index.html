@@ -2,36 +2,47 @@
 <html>
 
 <head>
+    <!-- metadata -->
     <meta charset="UTF-8" />
     <meta name="description" content="theme park website of Team 23(Tutor Group 4)" />
     <meta name="keywords" content="Theme park, fun, holiday, outdoor activities, family" />
     <meta name="author" content="Team 23(Tutor Group 4)" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="refresh" content="60" />
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/stylesheets/main.css">
+
+    <!-- title bar  -->
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/png" />
-    <link rel="stylesheet" href="/index.css">
     <title>Fun Theme Park</title>
 
+    <!-- fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik+Doodle+Shadow">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
 </head>
 
 <body>
+    <!-- Header and nav bar -->
     <header>
         <nav>
+            <!-- theme park logo -->
             <span class="logo">
                 <a href="/index.html"><img src="/assets/fun-theme-park-logo.png" alt="logo" width="140px" /></a>
             </span>
+            <!-- weather -->
             <span style="display: flex; align-items: center">
-                <img src="/assets/weather.jpg" alt="sunny-weather" width="80px" />
+                <img src="/assets/weather.jpg" alt="sunny weather" width="80px" />
                 <span style="color: red"><i>There will be no rain tomorrow 🧑‍🎄</i></span>
             </span>
+            <!-- booking -->
             <span class="book-now">
                 <a href="/booking/index.html"><button>Book now</button></a>
             </span>
         </nav>
     </header>
     <main>
+        <!-- main header image coursel of the page -->
         <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
         <section class="welcome">
             <h1>Welcome from the Fun Theme Park</h1>
@@ -54,6 +65,7 @@
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
                 <br>
+                <!-- image selector -->
                 <div style="text-align:center">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
@@ -61,14 +73,16 @@
                 </div>
             </section>
         </section>
+
+        <!-- to guide page -->
         <h2 class="to-guide"><i>Need a guide on planning?</i></h2>
         <div class="to-guide-btn"><a href="/guide/index.html"><button>Go to your guide</button></a></div>
 
-
+        <!-- events -->
         <h1 id="event-title" class="title">What is happening today?</h1>
         <section class="events">
             <div id="christmas-tree" class="event-img" style="display: none">
-                <img src="/assets/christmas-tree.jpg" alt="christmas-tree" />
+                <img src="/assets/christmas-tree.jpg" alt="christmase tree" />
             </div>
             <div id="christmas-message" class="event-img" style="display: none">
                 <div style="width: 50rem">
@@ -83,12 +97,13 @@
             </div>
         </section>
 
+        <!-- attractions -->
         <h1 class="title">Attractions</h1>
         <section class="attractions">
             <div class="attraction-container">
                 <div class="card">
                     <h2>Roller Coaster</h2>
-                    <iframe width="100%" height="498" src="https://www.youtube.com/embed/HGME_gAN6gg"
+                    <iframe title="youtubelink to rollercoster" width="100%" height="498" src="https://www.youtube.com/embed/HGME_gAN6gg"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
                     <article>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -101,7 +116,7 @@
                 </div>
                 <div class="card">
                     <h2>Roller Coaster</h2>
-                    <iframe width="100%" height="498" src="https://www.youtube.com/embed/HGME_gAN6gg"
+                    <iframe title="youtubelink to rollercoster" width="100%" height="498" src="https://www.youtube.com/embed/HGME_gAN6gg"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
                     <article>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -114,7 +129,7 @@
                 </div>
                 <div class="card">
                     <h2>Roller Coaster</h2>
-                    <iframe width="100%" height="498" src="https://www.youtube.com/embed/HGME_gAN6gg"
+                    <iframe title="youtubelink to rollercoster" width="100%" height="498" src="https://www.youtube.com/embed/HGME_gAN6gg"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
                     <article>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -127,7 +142,7 @@
                 </div>
             </div>
         </section>
-
+        <!-- map and location -->
         <h1 class="title">Where are we located?</h1>
         <section class="location">
             <h2><strong>We are open from 9:00 AM to 6:00 PM</strong></h1>
@@ -142,6 +157,7 @@
                 </address>
         </section>
     </main>
+    <!-- theme park footer and contact -->
     <footer>
         <div>
             <h2>Contact us</h2>
