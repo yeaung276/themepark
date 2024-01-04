@@ -7,10 +7,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-p {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 /* Header */
 header nav {
   display: flex;
@@ -59,7 +55,7 @@ footer {
 
 /* Main */
 .title {
-  font-family: "Rubik Doodle Shadow";
+  font-family: Rubik Doodle Shadow, Arial, Helvetica, sans-serif;
   font-size: 2.5rem;
   margin-left: 2rem;
   text-align: center;
@@ -72,7 +68,7 @@ footer {
 .welcome h1 {
   position: absolute;
   font-size: 3rem;
-  font-family: "Rubik Doodle Shadow";
+  font-family: Rubik Doodle Shadow, Arial, Helvetica, sans-serif;
   z-index: 100;
   right: 30%;
   color: red;
@@ -126,7 +122,7 @@ footer {
 }
 
 .events q {
-  font-family: "Pacifico";
+  font-family: Pacifico, Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   text-align: center;
 }
